@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hello World!</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>
+            Hello <span>World</span>!<button type="submit" class="btn btn-primary" onclick="this.previousSibling.textContent += '!'">
+                <i class="fa fa-plus-circle"></i>
+            </button>
+        </h1>
+    </div>
+
+    <a href="index2.pug">index2</a>
+    <a href="spotify.pug">Spotify App</a>
+    <script>
+        const token = window.location.hash.split('&')[0].split('=')[1];
+        if (token) { // é um callback spotify
+            sessionStorage['token'] = token;
+            window.location = 'http://localhost:8080/spotify.html';
+        }
+    </script>
+
+    <script src="./node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="./node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./node_modules/handlebars/dist/handlebars.min.js"></script>
+
+    <script src="main.js"></script>
+</body>
+</html>

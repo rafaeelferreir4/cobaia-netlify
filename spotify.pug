@@ -1,0 +1,14 @@
+extends master.pug
+block content
+  h1 Spotify App Cobaia!
+  div#usuario
+  button#login.btn.btn-success
+    i.fab.fa-spotify
+    span &nbsp;&nbsp;Login com Spotify
+  form
+    label ID do Artista
+    input(name='artista')
+    button.btn.btn-primary(type='submit') Busca
+  div#resultado Resultados aqui
+    img(src="#")
+  script(src="spotify.js")

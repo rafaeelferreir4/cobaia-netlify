@@ -1,0 +1,22 @@
+doctype html
+html(lang='pt-BR')
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width initial-scale=1.0')
+  meta(http-equiv='X-UA-Compatible' content='ie=edge')
+  title Hello Pug
+  link(rel='stylesheet' href='./node_modules/bootstrap/dist/css/bootstrap.min.css')
+  link(
+    rel='stylesheet'
+    href='./node_modules/@fortawesome/fontawesome-free/css/all.min.css')
+  link(rel='stylesheet' href='./master.sass')
+body
+  div.container
+    block content
+
+  script(src='./node_modules/jquery/dist/jquery.slim.min.js')
+  script(src='./node_modules/popper.js/dist/popper.min.js')
+  script(src='./node_modules/bootstrap/dist/js/bootstrap.min.js')
+  script(src='./node_modules/handlebars/dist/handlebars.min.js')
+
+  script(src='./master.ts')

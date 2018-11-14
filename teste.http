@@ -1,0 +1,2 @@
+// ler um artista
+curl -X "GET" "https://api.spotify.com/v1/artists/6gEzJZrbm0F4ihvE9iXR9z" -H "Accept: application/json" -H "Content-Type: application/json" -H "Authorization: Bearer BQAxog0pzz3ucK8mEMHv1GqKZMLTFh2bCMkPKRyuK1hgQmgguPcnP9N-lPzoUN9jHAdBq9xclK9fT766tNJXyiqmAylL-eFUFB-8FzeD7MEqfVKovTDushgYnvfbBDEoWH2gRybhmTzC-_bybux6Glr9Zw4HZbL5wQ"
