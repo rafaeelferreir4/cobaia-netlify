@@ -1,1 +1,4 @@
 abc
+// no terminal do linux/win --> pasta do repositorio clonado
+git config user.email "sdbhjsdgjsdsd@sd.com"
+git config user.name "sdbhjsdgjsdsd"
